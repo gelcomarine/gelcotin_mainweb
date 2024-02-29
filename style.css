@@ -1,0 +1,140 @@
+*{
+    font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+    cursor: none;
+}
+
+.custom-cursor {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 15px;
+    height: 28px;
+    background-image: url('media/mouse.gif'); /* Replace 'custom-cursor.png' with your custom cursor image */
+    background-size: contain;
+    pointer-events: none; /* Ensures the cursor doesn't interact with other elements */
+    z-index: 9999; /* Ensure the custom cursor is on top of other content */
+    display: none; /* Hide the custom cursor by default */
+    border-radius: 15px;
+}
+
+
+#navbar{
+    background-color: rgb(39, 110, 168);
+    height: 70px;
+    width: 99%;
+    margin: auto;
+    border-radius: 10px;
+    position: absolute;
+    margin-top: 0.2%;
+    z-index: 1;
+}
+.logo,.nav-menu{
+    display: inline-block;
+}
+#navbar img{
+    width: 200px;
+}
+.nav-main{
+    padding: 10px;
+}
+.nav-menu{
+    margin-left: 20%;   
+}
+.nav-menu i{
+    margin-left: 3px;
+}
+
+.nav-menu li{
+    margin-left: 40px;
+    list-style: none;
+    display: inline-block;
+    padding: 5px;
+    width: 120px;
+}
+.nav-menu a{
+    text-decoration: none;
+    color: aliceblue;
+}
+.nav-menu li:hover{
+    border: 0.5px solid black;
+    border-radius: 10px;
+    background-color: rgb(52, 101, 143);
+    box-shadow: 2px 2px 20px rgb(54, 120, 196);
+    transition: all 0.15s ease-in-out;
+    
+}
+
+
+
+/* ***********Entry page*********  */
+#entry-page{
+    position: relative;
+    /* overflow: hidden; */
+}
+
+#bg-video{
+    width: 100%;
+    transition: all 0.5s ease-in-out ;
+}
+
+
+#line{
+    position: absolute;
+    top: 200px;
+    left: 500px;
+    height: 70px;
+    transition: all 0.5s ease-in-out;
+    overflow: hidden;
+}
+#head{
+    margin-top: 10px;
+    color: rgb(231, 223, 110);
+    transition: all 1s ease-in-out;
+}
+
+#main-line{
+    position: absolute;
+    top:100px;
+    font-size: 5rem;
+    left: 300px;
+    width: 900px;
+    color: limegreen;
+}
+
+/* *******description********* */
+#description{
+    margin-top: -500px;
+    /* height: 1000px; */
+    /* border: 2px solid red; */
+    position: relative;
+    width: 100%;
+    height: 450px;
+}
+#description div{
+    width: 400px;
+    display: inline-block;
+}
+#description p{
+    color: rgb(57, 159, 177);
+    font-weight: bold;
+    overflow: hidden;
+}
+.left{
+    margin-top: 250px;
+    margin-left: -400px;
+    transition: all 0.5s ease-in-out;
+}
+.right{
+    position: absolute;
+    transition: all 0.5s ease-in-out;
+    top: 120px;
+    right: -400px;
+}
+#main-line{
+    display: none;
+}
